@@ -1,0 +1,145 @@
+body, h1, marquee {
+    margin: 0;
+    padding: 0;
+}
+
+.image-slider {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-slider img {
+    width: 20%;
+    margin: 0 10px;
+}
+
+.image-slider {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: scroll 5s linear infinite; /* Adjust the animation duration as needed */
+}
+
+.image-slider img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-right: 10px; /* Adjust the margin between images */
+}
+
+/* Keyframes animation for scrolling */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Move the images to the left to create scrolling effect */
+    }
+}
+
+.hero {
+    background-image: url('images/image1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #030000;
+    text-align: center;
+    text-decoration: solid;
+    text-wrap:nowrap;
+    text-shadow:rgba(30, 1, 16, 0.934);
+    padding: 100px;
+    position: relative; /* Ensure relative positioning for child elements */
+}
+
+.hero-text {
+    display: inline-block;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            position: absolute;
+            top: 50%; /* Position the text vertically in the middle */
+            left: 50%; /* Position the text horizontally in the middle */
+            transform: translate(-50%, -50%); /* Center the text */
+        }
+/* Apply a blur effect to the hero text's border */
+.hero-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid transparent; /* Transparent border initially */
+    filter: blur(5px); /* Apply a blur effect to the border */
+    z-index: -1; /* Place the border behind the text */
+}
+
+/* Style for the hero text content */
+.hero-text h1, .hero-text h2, .hero-text h3 {
+    font-weight: bold; /* Highlight text with bold */
+    display: inline-block; /* Ensure headings are on the same line */
+    background-blend-mode: lighten;
+}
+
+.hero-text h1 {
+    font-weight: bold; /* Highlight text with bold */
+    font-size: 40px; /* Adjust the font size for h1 */
+    display: inline-block; /* Ensure headings are on the same line */
+    color: #f0eeed; /* Change the color for the first heading */
+}
+
+.hero-text h3 {
+    font-weight: bold; /* Highlight text with bold */
+    font-size: 18px; /* Adjust the font size for h2 */
+    display: inline-block; /* Ensure headings are on the same line */
+    color: #33FF57; /* Change the color for the second heading */
+}
+
+@media (min-width: 992px) {
+    .rounded-lg-3 { border-radius: .3rem; }
+  }
+
+marquee {
+    height: auto; /* Allow the marquee to adjust its height based on content         height: 100px; */
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%; 
+}
+
+@keyframes marquee-animation {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    33.33%, 66.67% {
+        transform: translateX(-100%); /* Move to the left to reveal the next image */
+    }
+}
+
+.marquee-image {
+    display: inline-block;
+    margin-right: 40px; /* Adjust the margin between images */
+    vertical-align: middle;
+    animation: marquee-animation 5s linear infinite; 
+}
+
+.marquee-image img {
+    height: 200px; /* Set a fixed height for all images */
+    width: auto; /* Allow the width to adjust based on aspect ratio */
+}
+
+.form-control-dark {
+    border-color: var(--bs-gray);
+  }
+  .form-control-dark:focus {
+    border-color: #fff;
+    box-shadow: 0 0 0 .25rem rgba(234, 24, 129, 0.25);
+  }
+  
+  .text-small {
+    font-size: 95%;
+  }
+  
+  .dropdown-toggle:not(:focus) {
+    outline: 0;
+  }
+  

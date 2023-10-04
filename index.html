@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ALIET Website</title>
+
+    <title>Bootstrap Example</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Style for the marquee container */
+        .marquee-container {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        /* Style for individual image divs within the marquee */
+        .marquee-image {
+            flex-shrink: 0;
+            margin-right: 10px; /* Adjust the margin between images */
+            transition: transform 1s ease-in-out; /* Slide animation duration */
+        }
+
+        /* Keyframes animation for the marquee */
+        @keyframes marquee-animation {
+            0% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(0);
+            }
+            30% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+    
+    <!-- Add Bootstrap CSS via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Add Bootstrap JavaScript and Popper.js (required for some Bootstrap components) via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Andhra Loyola Institute of Engineering and Technology</h1><br>
+            <h3>Approved by AICTE,New Delhi and Affliated to JNTU Kakinada</h3>
+            <h3>Accredited by NAAC & An ISO 9001 : 2015 Certified Institution :: EAMCET/ICET CODE : ALIT</h3>
+        </div>
+        
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">HOME</a>
+            <button class="navbar-toggler" type="menu" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Departments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Admissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Marquee -->
+    <marquee animation="1s linear infinite" behavior="scroll" scrollamount="10" direction="left">Greetings to all the Final year Students who got placed in top MNC's and Startups.    Students should pay the fee before the due date.    Important Announcement: Admissions now open for the upcoming semester!</marquee>
+
+    <!-- Marquee for Images -->
+    <div class="marquee-container">
+        <div class="marquee-image"><img src="images/image1.jpg" alt="Image 1"></div>
+        <div class="marquee-image"><img src="images/image2.jpg" alt="Image 2"></div>
+        <div class="marquee-image"><img src="images/image3.jpg" alt="Image 3"></div>
+        <div class="marquee-image"><img src="images/image4.jpg" alt="Image 4"></div>
+        <div class="marquee-image"><img src="images/image5.jpg" alt="Image 5"></div>
+        <div class="marquee-image"><img src="images/image6.jpg" alt="Image 5"></div>
+
+    </div>
+
+
+
+    <!-- Include Bootstrap JavaScript if needed -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+<script>
+    const marqueeContainer = document.querySelector('.marquee-container');
+    const marqueeImages = document.querySelectorAll('.marquee-image');
+    let currentIndex = 0;
+
+    // Function to advance to the next image and restart when reaching the end
+    function slideImage() {
+        const nextIndex = (currentIndex + 1) % marqueeImages.length;
+        marqueeImages[currentIndex].style.transform = 'translateX(-100%)';
+        marqueeImages[nextIndex].style.transform = 'translateX(0)';
+        currentIndex = nextIndex;
+    }
+
+    // Initially start the marquee
+    slideImage();
+
+    // Set an interval to slide images every 3 seconds
+    setInterval(slideImage, 7000);
+</script>
+
+    <style>
+        /* Add space to sections */
+        .section {
+            margin-bottom: 20px; /* Add space below each section */
+            padding: 20px; /* Add padding to create space inside each section */
+            border: 1px solid #ddd; /* Optional: Add a border for better visualization */
+        }
+    </style>
+
+    <!-- Section 1 -->
+    <div class="section">
+        <h1>DEPARTMENTS</h1>
+    </div>
+
+    <div class="section">
+        <h2>Information Technology</h2>
+        <p>Department of Information Technology started in the year 2008, with an intake of 60 in UG Program. The department grew in stature and today, it is one of the most preferred departments in engineering education in the state. 
+        The department has well qualified, experienced & dynamic faculty along with experienced & skilled technical supporting staff who spearhead the process of achieving the vision of the department. 
+        
+        The department is well equipped with the latest computing labs & infrastructure, which includes latest and licensed software’s and computers with high configuration.The role of IT in industry includes many things, many people with many jobs and varied responsibilities, these responsibilities range from keeping systems and data secure to keeping networks up and running. 
+        There are people who input data, people who manage databases and people who do programming. IT also includes the management of data, whether it is in the form of text, voice, image, audio or some other form. 
+        
+        It can also involve things related to the Internet.</p>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section">
+        <h2>Computer Science and Engineering</h2>
+        <p>The Department of Computer Science & Engineering (CSE) is established in the year 2008 with a view to develop quality engineers to meet the current trends. The Department provides undergraduate program in B.Tech (CSE). 
+        The department has a pool of well qualified, highly experienced and research oriented faculty members covering all the major areas..
+
+        </p>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section">
+        <h2>Electronics and Communication Engineering</h2>
+        <p>The Department of ECE was established in the year 2008. The Department currently runs UG in Program in Electronics and Communication Engineering and PG Program in VLSI DESIGN . The intake of UG-ECE is 120 and PG-VLSI DESIGN is 12. The Department of ECE established state-of-the-art labs viz., Electronic Devices and Circuits, Pulse and Digital Circuits, Analog and Digital Communications, Microprocessors and Controllers, Microwave Engineering , VLSI and Digital Signal Processing, IoT etc. to suit the needs of the Students and the Faculty.
+            A YouTube channel created by the forum “ALIET ECE” helps students to project their project presentation on digital media. Various student chapters like IETE, ISTE have been established in the department to enable students to conduct guest talks, acquisition of new knowledge and to promote networking. 
+        
+        </p>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section">
+        <h2>Electrical and Electronics Engineering</h2>
+        <p>The Electrical & Electronics Engineering department was started with UG programme in 2008 with an intake of 60.The department has well talented, qualified, experienced & dynamic faculty along with skilled technical supporting staff who spearhead the process of achieving the vision of the department. The department has IIT&MIT video lectures, and internet leased speed of 65 Mbps, Digital library IEEE e-journals and well equipped labs & infrastructure. It is continuously striving to impart quality education and competitive spirit among students for academic excellence.
+
+        </p>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section">
+        <h2>Civil Engineering</h2>
+        <p>Civil engineering is a professional engineering discipline that deals with the design, construction and maintenance of the physical and naturally built infrastructure for fulfillment of Basic Needs of human race including Transportation, Communication, Energy production, Religious, Cultural, Sports and Community and Social and Developmental activities like bridges, roads, canals, dams and buildings.Department is the foremost in imparting Civil Engineering education in ALIET. Well qualified and experienced faculty is one of the salient feature of the department and acute care is taken to ensure that students acquire essential engineering concepts with in-depth understanding In addition to, the civil department is well equipped with required departmental laboratories with tools and equipments.
+
+        </p>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section">
+        <h2>Mechnanical Engineering</h2>
+        <p>The Department of Mechanical Engineering has come into existence in the year 2010 with an intake of 60 and it is extended to 120 from 2013. Since inception of the college six batches have passed out. The Department has 23 dedicated staff members (Teaching 20, Non Teaching 3), FOUR faculty members with Ph.D., SIX faculty members are pursuing Ph.D.’s, and the rest of faculty members are with PG Qualifications. The Mechanical Engineering program has been certified by the ISO. Our Mechanical Engineering department blends the principles of physics, engineering, and mathematics with creativity to strengthen our students’ conceptual understanding and help them become innovators in the field.
+
+        </p>
+    </div>
+
+</body>
+</html>
