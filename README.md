@@ -19,7 +19,7 @@ VS CODE:
 
 The files "index.html", "style.css", and "server.py" are shared in the following Google Drive Link as well as in GitHub Link
 	GDrive Link: https://drive.google.com/drive/folders/1CGvTku40Q_FitOPxqA7CK4mbwsstbjS9?usp=sharing
-	GitHub Link: 
+	GitHub Link: https://github.com/Rahamathunnisa-21/Rahamathunnisa_Project
 
 The images used in the website should be in the same directory within a folder. Here I named the folder as "images"
 
